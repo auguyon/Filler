@@ -6,7 +6,7 @@
 /*   By: auguyon <auguyon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 13:49:49 by auguyon           #+#    #+#             */
-/*   Updated: 2019/10/04 19:36:45 by auguyon          ###   ########.fr       */
+/*   Updated: 2019/10/04 19:51:45 by auguyon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,7 @@ void	copy_piece(t_piece *piece, t_map *map)
 	int j;
 
 	j = 0;
+printf("test1\n");
 	i = find_format(piece, map);
 	if (!(piece->piece = (char**)malloc(sizeof(char*) * (piece->x + 1))))
 		exit(0);
@@ -143,9 +144,13 @@ int		main(int ac, char **av)
 	initialize(piece, map);
 	while (r)
 	{
+	printf("av fd\n");
 		fd_to_tab(fd, map); // remplacer fd par zero
+	printf("av copy piece\n");
 		copy_piece(piece, map);
+	printf("av filler\n");
 		r = filler(piece, map, 0, 0);
+	printf("av free\n");
 		free_map(piece, map);
 	}
 	free(map);
