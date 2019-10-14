@@ -17,7 +17,7 @@ char	*ft_lltoa(long long n)
 {
 	long long		nb;
 	unsigned int	b;
-	short 			neg;
+	short			neg;
 	char			*str;
 
 	if (n == -9223372036854775807)

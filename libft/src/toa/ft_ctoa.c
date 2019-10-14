@@ -16,7 +16,7 @@
 char	*ft_ctoa(char n)
 {
 	unsigned short	i;
-	short 			neg;
+	short			neg;
 	char			nb;
 	char			*str;
 

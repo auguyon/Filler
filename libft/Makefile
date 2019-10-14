@@ -67,7 +67,7 @@ toa		+= ft_uctoa_base_caps.c
 toa		:= $(addprefix $(toadir)/, $(toa))
 
 utildir	:= utility
-util	:= ft_atoi.c ft_atoi_base.c ft_isdigit.c
+util	:= ft_atoi.c ft_atoi_base.c ft_isdigit.c ft_min.c ft_max.c ft_abs.c
 util	:= $(addprefix $(utildir)/, $(util))
 
 gnldir	:= Get_Next_Line

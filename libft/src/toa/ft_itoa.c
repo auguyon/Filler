@@ -16,7 +16,7 @@
 char	*ft_itoa(int n)
 {
 	unsigned short	i;
-	short 			neg;
+	short			neg;
 	int				nb;
 	char			*str;
 

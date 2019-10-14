@@ -12,21 +12,21 @@
 
 #include "mem.h"
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    long    *str;
-    char    *str_2;
+	long	*str;
+	char	*str_2;
 
-    str = (long*)s;
-    while ((n >= sizeof(long)))
-    {
-        *str++ = 0;
-        n -= sizeof(long);
-    }
-    str_2 = (char*)str;
-    while (n > 0)
-    {
-        *str_2++ = 0;
-        n--;
-    }
+	str = (long*)s;
+	while ((n >= sizeof(long)))
+	{
+		*str++ = 0;
+		n -= sizeof(long);
+	}
+	str_2 = (char*)str;
+	while (n > 0)
+	{
+		*str_2++ = 0;
+		n--;
+	}
 }

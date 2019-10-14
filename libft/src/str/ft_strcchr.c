@@ -22,7 +22,7 @@ static int	ft_search_letter(char c, char to_find)
 	return (0);
 }
 
-char	*ft_strcchr(const char *str, int c)
+char		*ft_strcchr(const char *str, int c)
 {
 	while (*str)
 	{

@@ -27,7 +27,8 @@ char				*ft_stoa_base(short n, int base);
 char				*ft_stoa_base_caps(short n, int base);
 char				*ft_ulltoa(unsigned long long n);
 char				*ft_ulltoa_base(unsigned long long n, unsigned int base);
-char				*ft_ulltoa_base_caps(unsigned long long n, unsigned int base);
+char				*ft_ulltoa_base_caps(unsigned long long n,
+															unsigned int base);
 char				*ft_ustoa(unsigned short n);
 char				*ft_ustoa_base(unsigned short n, unsigned int base);
 char				*ft_ustoa_base_caps(unsigned short n, unsigned int base);

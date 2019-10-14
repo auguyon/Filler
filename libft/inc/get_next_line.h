@@ -18,7 +18,7 @@
 # include <fcntl.h>
 # include "str.h"
 
-# define BUFF_SIZE 999
+# define BUFF_SIZE 1
 
 typedef struct		s_gnl
 {
@@ -26,5 +26,7 @@ typedef struct		s_gnl
 	int				fd;
 	struct s_gnl	*next;
 }					t_gnl;
+
+int					get_next_line(const int fd, char **line);
 
 #endif

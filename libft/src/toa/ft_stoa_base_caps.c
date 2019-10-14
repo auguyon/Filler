@@ -66,4 +66,3 @@ char		*ft_stoa_base_caps(short n, int base)
 	}
 	return (str);
 }
-

@@ -14,9 +14,9 @@
 
 static int	ft_base(int nb, int base)
 {
-	char	base1[17] = "0123456789abcdef";
-	char	base2[17] = "0123456789ABCDEF";
-	int		i;
+	static char	base1[17] = "0123456789abcdef";
+	static char	base2[17] = "0123456789ABCDEF";
+	int			i;
 
 	i = 0;
 	while (i < base)
@@ -28,7 +28,7 @@ static int	ft_base(int nb, int base)
 	return (-1);
 }
 
-int	ft_atoi_base(const char *str, int base)
+int			ft_atoi_base(const char *str, int base)
 {
 	int	nb;
 	int	neg;
