@@ -50,7 +50,7 @@ void    create_map(int x, int y, const char *name)
     int j;
     int fd;
 
-    if((fd = open(name, O_CREAT | O_RDWR)) < 0)
+    if((fd = creat(name, 00444)) < 0)
         return ;
     random_positions(x, y, p);
     i = 0;
@@ -60,7 +60,7 @@ void    create_map(int x, int y, const char *name)
         while (j++ < y)
         {
             if (i == p[0] && j == p[1])
-                write (fd, "O", 1);
+                write(fd, "O", 1);
             else if (i == p[2] && j == p[3])
                 write(fd, "X", 1);
             else
